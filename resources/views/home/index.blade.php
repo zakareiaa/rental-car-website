@@ -22,7 +22,11 @@ dump($cars->toArray())
                                 Type, etc...
                             </p>
 
+<<<<<<< HEAD
                             <a class="btn btn-hero-slider" href="{{ route('car.search') }}">Find the car</a>
+=======
+                            <button class="btn btn-hero-slider">Find the car</button>
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
                         </div>
                     </div>
                     <div class="slide-image">

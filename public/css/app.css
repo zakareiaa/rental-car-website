@@ -950,8 +950,12 @@ a.pagination-item:hover {
   position: relative;
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   justify-content: center;
   gap: 4px;
+=======
+  gap: 1rem;
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
   padding: 1rem;
   font-size: 14px;
   border: 1px solid var(--primary-color);

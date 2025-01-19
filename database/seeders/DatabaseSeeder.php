@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+<<<<<<< HEAD
 use App\Models\Car;
 use App\Models\CarImage;
 use App\Models\CarType;
@@ -13,6 +14,10 @@ use App\Models\State;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Eloquent\Factories\Sequence;
+=======
+use App\Models\User;
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -22,6 +27,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+<<<<<<< HEAD
 
         CarType::factory()
             ->sequence(
@@ -115,5 +121,13 @@ class DatabaseSeeder extends Seeder
                 'favouriteCars'
             )
             ->create();
+=======
+        // User::factory(10)->create();
+
+        User::factory()->create([
+            'name' => 'Test User',
+            'email' => 'test@example.com',
+        ]);
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
     }
 }

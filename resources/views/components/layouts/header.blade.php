@@ -61,7 +61,11 @@
                         <a href="{{ route('car.index') }}">My Cars</a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="{{ route('car.watchlist') }}">My Favourite Cars</a>
+=======
+                        <a href="watchlist.html">My Favourite Cars</a>
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
                     </li>
                     <li>
                         <form action="#" method="post">

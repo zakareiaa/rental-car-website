@@ -18,7 +18,11 @@ class CarImageFactory extends Factory
     public function definition(): array
     {
         return [
+<<<<<<< HEAD
             'image_path' => '/img/cars/Lexus-RX200t-2016/' . rand(1, 7) . '.jpeg',
+=======
+            'image_path' => $this->faker->imageUrl(),
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
             'position' => function (array $attributes) {
                 return Car::find($attributes['car_id'])->images()->count() + 1;
             },

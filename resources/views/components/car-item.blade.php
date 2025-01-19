@@ -1,15 +1,22 @@
 @props(['car'])
 
 <div class="car-item card">
+<<<<<<< HEAD
     <a href="{{ route('car.show', $car) }}">
         <img
             src="{{ $car->primaryImage->image_path }}"
+=======
+    <a href="{{ route('car.show', 1) }}">
+        <img
+            src="/img/cars/Lexus-RX200t-2016/1.jpeg"
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
             alt="Car Image"
             class="car-item-img rounded-t"
         />
     </a>
     <div class="p-medium">
         <div class="flex items-center justify-between">
+<<<<<<< HEAD
             <small class="m-0 text-muted">{{ $car->city->name }}</small>
             <button class="btn-heart text-primary">
                 @if($car->is_liked)
@@ -24,6 +31,10 @@
                     />
                 </svg>
                 @else
+=======
+            <small class="m-0 text-muted">location</small>
+            <button class="btn-heart">
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -38,15 +49,23 @@
                         d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
                     />
                 </svg>
+<<<<<<< HEAD
                 @endif
+=======
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
             </button>
         </div>
         <h2 class="car-item-title">{{ $car->year }} - {{ $car->maker->name }} {{$car->model->name}}</h2>
         <p class="car-item-price">${{ $car->price }}</p>
         <hr />
         <p class="m-0">
+<<<<<<< HEAD
             <span class="car-item-badge">{{ $car->carType->name }}</span>
             <span class="car-item-badge">{{ $car->fuelType->name }}</span>
+=======
+            <span class="car-item-badge">{{ $car->carType->name ?? 'Unknown Type' }}</span>
+            <span class="car-item-badge">{{ $car->fuelType->name ?? 'Unknown Type' }}</span>
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
         </p>
     </div>
 </div>

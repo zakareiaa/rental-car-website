@@ -14,8 +14,11 @@ class Car extends Model
 {
     use HasFactory, SoftDeletes;
 
+<<<<<<< HEAD
     protected $appends = ['is_liked'];
 
+=======
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
     protected $fillable = [
         'id',
         'maker_id',
@@ -64,7 +67,11 @@ class Car extends Model
         return $this->belongsTo(\App\Models\Model::class);
     }
 
+<<<<<<< HEAD
     public function features(): HasOne
+=======
+    public function carFeatures(): HasOne
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
     {
         return $this->hasOne(CarFeature::class);
     }
@@ -74,15 +81,19 @@ class Car extends Model
         return $this->hasMany(CarImage::class);
     }
 
+<<<<<<< HEAD
     public function primaryImage(): HasOne
     {
         return $this->hasOne(CarImage::class)->oldestOfMany('position');
     }
 
+=======
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
     public function favouriteBy(): BelongsToMany
     {
         return $this->belongsToMany(User::class, 'favourite_cars');
     }
+<<<<<<< HEAD
 
     public function getIsLikedAttribute(): bool
     {
@@ -101,4 +112,6 @@ class Car extends Model
     {
         return (new \Carbon\Carbon($this->created_at))->format('Y-m-d');
     }
+=======
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
 }

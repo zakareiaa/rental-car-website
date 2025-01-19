@@ -6,7 +6,10 @@ use App\Models\CarType;
 use App\Models\City;
 use App\Models\FuelType;
 use App\Models\Maker;
+<<<<<<< HEAD
 use App\Models\Model;
+=======
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
@@ -26,7 +29,11 @@ class CarFactory extends Factory
         return [
             'maker_id' => Maker::inRandomOrder()->first()->id,
             'model_id' => function (array $attributes) {
+<<<<<<< HEAD
                 return Model::where('maker_id', $attributes['maker_id'])->inRandomOrder()->first()->id;
+=======
+                return Maker::where('id', $attributes['maker_id'])->inRandomOrder()->first()->id;
+>>>>>>> d31b216de56fc65efa4b782ba714561e21ad7f63
             },
             'year' => $this->faker->year(),
             'price' => ((int)$this->faker->randomFloat(2, 5, 100)) * 1000,
